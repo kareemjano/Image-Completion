@@ -38,7 +38,11 @@ Since it is a regretion problem the MSELoss is also used as a metric to evaluate
 ## Results
 ### Tensorboard
 ![alt text](https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/loss.png)
+
+
 ![alt text](https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/acc.png)
+
+
 ![alt text](https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/tb.png)
 
 ### On validation data
