@@ -2,7 +2,7 @@
 In this project, we will remove a part of an image and try to reconstruct it. The images are resized to 256x256 and grayscaled to have 1 channel. The outpout size will also be the 256x256x1 but only the removed part will be considered as an output and for calculating the loss. The model used is a simple Autoencoder.
 
 ## Example Input
-![alt text]https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/in.png
+![alt text](https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/in.png)
 
 ## The Model
 In what follows I will be using an Autoencoder model. The model will take as an input the 256x256x1 with the 40x40 pixels in the middle set to 0. The output will also be 256x256x1 but the loss will only be computed on the blacked out pixels. It uses four convlution and pooling layer for the encoder and 4 upsampling and convlution layers for the decoder. Also Xavier/2 weights initialization was used which helps much in having faster convergence. More possible models will be discussed at the end of the notebook.
@@ -37,15 +37,15 @@ Since it is a regretion problem the MSELoss is also used as a metric to evaluate
 
 ## Results
 ### Tensorboard
-![alt text]https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/loss.png
-![alt text]https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/acc.png
-![alt text]https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/tb.png
+![alt text](https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/loss.png)
+![alt text](https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/acc.png)
+![alt text](https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/tb.png)
 
 ### On validation data
-![alt text]https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/eval_results.png
+![alt text](https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/eval_results.png)
 
 ### On unseen data
-![alt text]https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/results_unseen.png
+![alt text](https://github.com/kareemjano/Image-Completion/blob/main/Snapshots/results_unseen.png)
  
 ## Comments
 ### Choice of the model:
